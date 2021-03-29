@@ -13,7 +13,7 @@ body {
 .link img {
   width: 100%;
 }
-.link .more_inf {
+.link .link__ref {
   font-family: fantasy, cursive;
 }
 
@@ -134,7 +134,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-.main__completed-tasks label {
+.main__complet-task label {
   text-decoration: line-through;
   color: #888;
 }
