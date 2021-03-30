@@ -11,10 +11,6 @@ var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.getElementsByClassName("incomplet-tasks")[0];//ul of .incomplet-tasks
 var completedTasksHolder=document.getElementsByClassName("complet-tasks")[0];//complet-tasks
-console.dir(document.getElementsByClassName("incomplet-tasks"));//complet-tasks
-console.dir(document.getElementsByClassName("complet-tasks"));//complet-tasks
-
-
 
 //New task list item
 var createNewTaskElement=function(taskString){
@@ -35,7 +31,7 @@ var createNewTaskElement=function(taskString){
 
   listItem.className="task-list__item";
   label.innerText=taskString;
-  label.className='task-list__task';
+  label.className="task-list__task";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
@@ -47,8 +43,9 @@ var createNewTaskElement=function(taskString){
   editButton.className="task-list__edit-button";
 
   deleteButton.className="task-list__delete-button";
-  deleteButtonImg.src='./remove.svg';
-  deleteButtonImg.className='task-list__img';
+  deleteButtonImg.src="./remove.svg";
+  deleteButtonImg.alt="delete_task";
+  deleteButtonImg.className="task-list__img";
   deleteButton.appendChild(deleteButtonImg);
 
 
@@ -86,7 +83,7 @@ var editTask=function(){
 
   var listItem=this.parentNode;
   console.dir(this.parentNode);
-  var editInput=listItem.querySelector('input[type=text]');
+  var editInput=listItem.querySelector("input[type=text]");
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".task-list__edit-button");
   var containsClass=listItem.classList.contains("task-list__item_editmode");
@@ -195,7 +192,7 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 
 
-// Issues with usability don't get seen until they are in front of a human tester.
+// Issues with usability don"t get seen until they are in front of a human tester.
 
 //prevent creation of empty tasks.
 
