@@ -20,7 +20,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header {
     text-align: center;
@@ -37,7 +37,7 @@
 .task-list__input-text, .task-list__task  {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-list__task-row {
@@ -45,18 +45,18 @@
 }
 
 .incomplet-tasks, .complet-tasks {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .task-list__item, .task-list__tirtle {
-  list-style:none;
+  list-style: none;
 }
 
 .task-list__input-text, .task-list__checkbox, 
 .task-list__delete-button, .task-list__edit-button, 
 .task-list__add-button {
-        outline:none;
+  outline: none;
 }
 
 .task-list__delete-button, .task-list__edit-button, 
@@ -93,8 +93,8 @@
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -115,7 +115,7 @@
 }
 
 .task-list__add-button:hover {
-  color: #0FC57C;
+  color: #0fc57c;
 }
 
 /* Task list */
@@ -148,7 +148,7 @@
   width: 226px
 }
 
-.task-list__item > .task-list__delete-button:hover {
+.task-list__delete-button:hover {
   color: #cf2323;
 }
 
@@ -170,14 +170,14 @@
 
 /* Edit Task */
 .task-list__item .task-list__input-text {
-  display:none
+  display: none
 }
 
 .task-list__item_editmode .task-list__input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .task-list__item_editmode .task-list__task {
-  display:none;
+  display: none;
 }
